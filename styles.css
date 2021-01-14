@@ -10,69 +10,9 @@
 
 /* Убираем маркировку ссылок */
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
- /* Убираем подчеркивание у ссылок */
-a { 
-    text-decoration: none;
+/* Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
 }
-/* логотип */
-.navbar-one {
-    color: #2196F3;
-}
-.navbar-two {
-    color: #212121 ;
-}
-.page-header {
-    background-color:#FFFFFF;
-}
-.link {
-    color:#212121;
-}
-.link:hover,
-.link:focus {
-    color:#2196F3;
-  }
-.site-nav .link.current {
-    color:#2196F3;
-}
-.link.mail {
-    color:#2196F3;
-}
-.link.phone {
-    color:#757575; 
-}
-.page-hero {
-    background-color:#2F303A;
-    color:#FFFFFF
-}
-/*  
-.section {
-    background-color:#E5E5E5;
- */
-}
-.title {
-    color: #212121;
-}
-.desc {
-    color: #757575;
-}
-.team {
-    background-color: #F5F4FA;
-}
-.footer {
-    background-color: #2F303A;
-}
-.footer .navbar-two {
-    color:#FFFFFF;
-}
-.address {
-    font-style: normal;
-  }
-.map {
-    color:#FFFFFF; 
-}
-.mailfooter,.phonefooter {
-    color:rgba(255, 255, 255, 0.6);
-}
-  
