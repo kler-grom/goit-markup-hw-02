@@ -1,12 +1,11 @@
-/* цвет основного текста #757575 */
-/* цвет текста героя #FFFFFF */
-/* цвет заголовков #212121 */
-/* цвет акцента #2196F3 */
-/* фон хедера #FFFFFF */
-/* фон героя #2F303A */
-/* фон эбаут ас #E5E5E5 */
-/* фон тим #F5F4FA */
-/* фон футера #2F303A */
+:root {
+  --text-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-background: #2f303a;
+}
 
 /* Убираем маркировку ссылок */
 ul {
@@ -16,3 +15,171 @@ ul {
 a {
   text-decoration: none;
 }
+/* Убираем курсив у адреса */
+address {
+  font-style: normal;
+}
+body {
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+/* ========== HEADER ========== */
+.logotype {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.logotype:focus {
+  color: var(--accent-color);
+}
+.logo-part-one {
+  color: var(--accent-color);
+}
+.logo-part-two {
+  color: var(--title-text-color);
+}
+.navigation-list-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent-color);
+}
+.mail-link-header,
+.tel-link-header {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.mail-link-header:hover,
+.mail-link-header:focus {
+  color: var(--accent-color);
+}
+.tel-link-header:hover,
+.tel-link-header:focus {
+  color: var(--accent-color);
+}
+/* ========== END HEADER ========== */
+.hero {
+  background-color: var(--accent-background);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ========== HERO ========== */
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.modal-btn :hover,
+.modal-btn :focus {
+  color: var(--accent-color);
+}
+/* ========== END HERO ========== */
+
+/* ========== BENEFITS ========== */
+.benefits-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+/* ========== END BENEFITS  ========== */
+
+/* ========== TEAM  ========== */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ==========  AND TEAM  ========== */
+
+/* ==========  FOOTER  ========== */
+.footer {
+  background-color: var(--accent-background);
+}
+.logotype-footer :hover,
+.logotype-footer :focus {
+  color: var(--accent-color);
+}
+.logotype-footer {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+.logo-part-two-footer {
+  color: #ffffff;
+}
+.map-link-footer :hover,
+.map-link-footer :focus {
+  color: var(--accent-color);
+}
+.map-link-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.mail-link-footer,
+.phone-link-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ==========  AND FOOTER  ========== */ ;
