@@ -70,6 +70,7 @@ body {
   color: var(--accent-color);
 }
 /* ========== END HEADER ========== */
+/* ========== HERO ========== */
 .hero {
   background-color: var(--accent-background);
 }
@@ -82,8 +83,6 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
-
-/* ========== HERO ========== */
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
@@ -145,10 +144,40 @@ body {
   letter-spacing: 0.03em;
 }
 /* ==========  AND TEAM  ========== */
-
+/* ==========  PORTFOLIO  ========== */
+.filter-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.filter-button :hover,
+.filter-button :focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+.portfolio-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+/* ==========  AND PORTFOLIO  ========== */
 /* ==========  FOOTER  ========== */
 .footer {
   background-color: var(--accent-background);
+}
+.logotype-footer {
+  font-family: var(--logo-font);
 }
 .logotype-footer :hover,
 .logotype-footer :focus {
