@@ -5,6 +5,8 @@
   --title-text-color: #212121;
   --text-color: #757575;
   --accent-background: #2f303a;
+  --second-text-color: #ffffff;
+  --section-team-color: #f5f4fa;
 }
 
 /* Убираем маркировку ссылок */
@@ -30,15 +32,14 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-.logotype:focus {
+.logotype:focus,
+.logotype:hover {
   color: var(--accent-color);
 }
 .logo-part-one {
   color: var(--accent-color);
-}
-.logo-part-two {
-  color: var(--title-text-color);
 }
 .navigation-list-link {
   color: var(--title-text-color);
@@ -50,6 +51,9 @@ body {
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
+  color: var(--accent-color);
+}
+.navigation-list-link.current {
   color: var(--accent-color);
 }
 .mail-link-header,
@@ -81,16 +85,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--second-text-color);
 }
 .modal-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--second-text-color);
   background-color: var(--accent-color);
 }
 .modal-btn :hover,
@@ -126,7 +131,7 @@ body {
   color: var(--title-text-color);
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
 }
 .team-subtitle {
   font-weight: 500;
@@ -145,7 +150,8 @@ body {
 }
 /* ==========  AND TEAM  ========== */
 /* ==========  PORTFOLIO  ========== */
-.filter-link {
+.filter-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -153,9 +159,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.filter-button :hover,
-.filter-button :focus {
-  color: #ffffff;
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--second-text-color);
   background-color: var(--accent-color);
 }
 .portfolio-subtitle {
@@ -178,22 +184,19 @@ body {
 }
 .logotype-footer {
   font-family: var(--logo-font);
-}
-.logotype-footer :hover,
-.logotype-footer :focus {
-  color: var(--accent-color);
-}
-.logotype-footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  color: var(--second-text-color);
 }
-.logo-part-two-footer {
-  color: #ffffff;
+.logotype-footer:focus,
+.logotype-footer:hover {
+  color: var(--accent-color);
 }
-.map-link-footer :hover,
-.map-link-footer :focus {
+
+.contact-footer-item a:hover,
+.contact-footer-item a:focus {
   color: var(--accent-color);
 }
 .map-link-footer {
@@ -201,7 +204,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--second-text-color);
 }
 .mail-link-footer,
 .phone-link-footer {
