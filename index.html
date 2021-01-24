@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
-        integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
-        иcrossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles.css" />
+    
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+    иcrossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-
     <!-- HEADER -->
     <header class="header"> 
+        <div class="conteiner main-nav">
         <nav class="navigation">
             <a class="logotype" href="./index.html"  lang="en">
                 <span class="logo-part-one">Web</span>Studio
@@ -39,18 +41,23 @@
            <li class="contact-header-item">    
                 <a class="tel-link-header" href="tel:+380961111111">+38 096 111 11 11</a>
            </li> 
-        </ul>
+        </ul>   
+    </div>   
     </header>
     <main>
 
         <!-- HERO -->
         <section class="hero">
+            <div class="conteiner">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="modal-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
+
 
         <!-- BENEFITS -->
         <section class="benefits">
+            <div class="conteiner">
             <h2 hidden >Приемущества</h2>
             <ul class="benefits-list">
                 <li class="benefits-list-item">
@@ -70,10 +77,12 @@
                     <p class="benefits-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>                    
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- ABOUT US -->
         <section class="about">
+            <div class="conteiner">
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="about-list">
                 <li class="about-list-item">
@@ -86,10 +95,12 @@
                     <img class="about-img" src="img/box_3.jpg" alt="дизайнер выбырает цвет" width="370" height="294">
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- TEAM -->
         <section class="team">
+            <div class="conteiner">
             <h2 class="title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list-card">
@@ -113,11 +124,13 @@
                     <p class="team-description">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
+        <div class="conteiner">
         <a class="logotype-footer" href="./index.html" lang="en">
             <span class="logo-part-one">Web</span>Studio
         </a>
@@ -134,6 +147,7 @@
                 </li>
             </ul>
         </address>
-    </footer>
+</div>
+    </footer>    
 </body>
 </html>
