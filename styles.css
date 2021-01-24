@@ -135,7 +135,6 @@ html {
   text-align: center;
 }
 .hero-title {
-  position: absolute;
   max-width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -149,7 +148,6 @@ html {
   color: var(--second-text-color);
 }
 .modal-btn {
-  position: absolute;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -268,24 +266,47 @@ html {
 .filter-list {
   padding-left: 0;
   display: flex;
-  /* margin-left: 280px; */
   justify-content: center;
+  background-color: tomato;
 }
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-list {
-  display: flex;
-}
-
 .filter-button {
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  color: var(--title-text-color);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+}
+.filter-list-item {
+  margin-bottom: 10px;
+}
+
+.filter {
+  padding-top: 94px;
+  padding-bottom: 16px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.portfolio-list-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+  background-color: tomato;
+}
+.activ {
+  background-color: var(--accent-color);
 }
 .filter-button:hover,
 .filter-button:focus {
