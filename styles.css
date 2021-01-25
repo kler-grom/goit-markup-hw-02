@@ -21,7 +21,7 @@ a {
 address {
   font-style: normal;
 }
-h1 h2,
+h1,h2,
 h3,
 h4,
 h5,
@@ -76,6 +76,8 @@ html {
 }
 .navigation-list {
   display: flex;
+  margin: 0;
+  align-items:center;
 }
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -172,7 +174,7 @@ html {
   display: flex;
   padding-left: 0;
   margin: 0;
-  padding-top: 94px;
+  margin-top: 94px;
 }
 .benefits-list-item {
   min-height: 101px;
@@ -204,8 +206,8 @@ html {
 .about-list {
   display: flex;
   padding-left: 0;
-  padding-bottom: 94px;
-  margin: 0;
+  margin: 0;  
+  margin-bottom: 94px;
 }
 .about-list-item {
   height: 294px;
@@ -218,6 +220,7 @@ html {
 /* ========== TEAM  ========== */
 
 .title {
+  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -226,15 +229,17 @@ html {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   min-height: 42px;
-  padding-top: 94px;
+  margin-top: 0;
 }
 .team {
   background-color: var(--section-team-color);
+  
 }
 .team-list {
   display: flex;
   padding-bottom: 94px;
   padding-left: 0;
+  margin: 0;
 }
 .team-list-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -264,11 +269,25 @@ html {
 }
 /* ==========  AND TEAM  ========== */
 /* ==========  PORTFOLIO  ========== */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;}
+  
 .filter-list {
+    margin-top: 0;
   padding-left: 0;
   display: flex;
   justify-content: center;
-  background-color: tomato;
   margin-bottom: 34px;
 }
 .filter-list-item:not(:last-child) {
@@ -287,9 +306,10 @@ html {
   color: var(--title-text-color);
   text-align: center;
   letter-spacing: 0.03em;
+  
 }
 .filter-list-item {
-  margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .filter {
@@ -302,8 +322,6 @@ html {
   flex-wrap: wrap;
   padding-left: 0;
   margin-top: 0;
-  /* border:background: #FFFFFF; */
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
@@ -328,18 +346,21 @@ html {
   margin-right: 24px;
   margin-left: 24px;
   margin-bottom: 4px;
-  background-color: tomato;
 }
 .portfolio-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  margin-top: 4px;
+  
   margin-right: 24px;
   margin-left: 24px;
   margin-bottom: 20px;
-  background-color: teal;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* ==========  AND PORTFOLIO  ========== */
 /* ==========  FOOTER  ========== */
