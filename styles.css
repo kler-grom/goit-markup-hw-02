@@ -186,6 +186,7 @@ html {
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .benefits-description {
   font-weight: 400;
@@ -268,6 +269,7 @@ html {
   display: flex;
   justify-content: center;
   background-color: tomato;
+  margin-bottom: 34px;
 }
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
@@ -299,11 +301,14 @@ html {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  margin-top: 0;
+  /* border:background: #FFFFFF; */
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
-  background-color: tomato;
 }
 .activ {
   background-color: var(--accent-color);
@@ -319,12 +324,22 @@ html {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  background-color: tomato;
 }
 .portfolio-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+  margin-top: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+  background-color: teal;
 }
 /* ==========  AND PORTFOLIO  ========== */
 /* ==========  FOOTER  ========== */
